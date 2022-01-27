@@ -1,13 +1,107 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(242, 242, 242)
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+nav.navbar {
+  height: 3rem;
+}
+
+.height-rest {
+  height: calc(100vh - 3rem);
+}
+
+.fc-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.fc-padding-wrapper {
+  width: 100%;
+}
+
+.fc-wrapper {
+  position: relative !important;
+  transform-origin: top !important;
+}
+
+.fc-wrapper .card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  transform-origin: top left;
+  margin-bottom: 1rem
+}
+
+.fc-wrapper .canvas-container {
+  transform-origin: left top !important;
+}
+
+.card {
+  border: 0;
+  border-radius: 0.1875rem;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-top: 1rem;
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+ul.nav-tabs{
+    background-color: #ababab;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-tabs.nav-tabs-neutral>.nav-item>.nav-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+}
+
+.nav-tabs {
+  border: 0;
+  padding: 15px 0.7rem;
+}
+
+.nav-item button {
+  color: white;
+}
+
+.nav-item button.active{
+  border-radius: 30px;
+}
+
+.nav-link:hover{
+  border-radius: 30px;
+  color: black;
+}
+
+.list li {
+  line-height: 2rem;
+  background-color: rgb(225, 225, 225);
+  margin-bottom: 0.3rem;
+  padding: 5px
+}
+
+.list {
+  list-style-type: none;
+  padding-left: 0
 }
